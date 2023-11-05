@@ -6,16 +6,21 @@
   align-items: center;
 }
 
+input {
+  border-radius : 10px;
+}
+
 .layout {
   font-family:'Courier New', Courier, monospace;
   word-wrap: break-word;
   word-break: normal;
-  width: 1200px;
+  max-width: 1200px;
   min-width: 800px;
   margin: 0 auto 0 auto;
 }
 span {
   font-size: 1.2em;
+  font-weight: bold;
 
 }
 input {
@@ -32,6 +37,7 @@ button {
   border : 3px solid black;
   border-radius : 10px;
   margin-right: 5px;
+  font-weight: bold;
 }
 
 .todo-box {
@@ -40,7 +46,6 @@ button {
   border : 5px solid black;
   width : 300px;
   min-height : 200px;
-  /* gap : 20px; */
   padding:10px;
   border-radius : 10px;
 }
