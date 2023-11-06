@@ -50,9 +50,9 @@ function App() {
 
   return (
     <div className="layout">
-      <h1>My ToDo List🧾</h1>
+      <h1 style={{ marginLeft: "7px" }}>My ToDo List 🧾</h1>
       <div className="input-container">
-        <div>
+        <div className="layout-head">
           <span> 제목: </span>
           <input tpye='text' value={title}
             onChange={(e) => setTitle(e.target.value)} />
@@ -60,9 +60,9 @@ function App() {
           <input tpye='text' value={contents}
             onChange={(e) => setContents(e.target.value)} />
         </div>
-        <button onClick={handleSubmit}>추가하기</button>
+        <button className="button-add" onClick={handleSubmit}>추가하기</button>
       </div>
-      <div>
+      <div className="layout-body">
         <h1>Working..🔥</h1>
         <div className="todoBox-container">
           {todoList.filter((item) => !item.isDone)

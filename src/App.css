@@ -1,3 +1,15 @@
+.layout {
+  font-family:'Courier New', Courier, monospace;
+  word-wrap: break-word;
+  word-break: normal;
+  max-width: 1200px;
+  min-width: 800px;
+  margin: 0 auto 0 auto;
+}
+.layout-head {
+
+}
+
 .input-container{
   display: flex;
   justify-content:space-between;
@@ -8,25 +20,18 @@
 
 input {
   border-radius : 10px;
-}
-
-.layout {
-  font-family:'Courier New', Courier, monospace;
-  word-wrap: break-word;
-  word-break: normal;
-  max-width: 1200px;
-  min-width: 800px;
-  margin: 0 auto 0 auto;
-}
-span {
-  font-size: 1.2em;
-  font-weight: bold;
-
-}
-input {
   width: 300px;
   height: 30px;
   border : 2px solid black;
+}
+
+.layout-body {
+  margin-left : 7px;
+}
+
+span {
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 button {
@@ -38,6 +43,17 @@ button {
   border-radius : 10px;
   margin-right: 5px;
   font-weight: bold;
+}
+.button-add:hover {
+  border : 3px solid blue;
+}
+
+.button-delete:hover {
+  border : 3px solid fuchsia;
+}
+
+.button-done:hover {
+  border : 3px solid greenyellow;
 }
 
 .todo-box {
