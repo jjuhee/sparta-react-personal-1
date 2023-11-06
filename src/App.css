@@ -6,9 +6,6 @@
   min-width: 800px;
   margin: 0 auto 0 auto;
 }
-.layout-head {
-
-}
 
 .input-container{
   display: flex;
@@ -64,6 +61,10 @@ button {
   min-height : 200px;
   padding:10px;
   border-radius : 10px;
+}
+
+.todo-box-is-done {
+  border : 5px solid gray;
 }
 
 .todo-box > p {

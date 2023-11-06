@@ -1,7 +1,7 @@
 function TodoBox(props) {
     const { todo } = props;
     return (
-        <div className="todo-box">
+        <div className={`todo-box ${todo.isDone ? 'todo-box-is-done' : ''}`}>
             <h2>{todo.title}</h2>
             <p>{todo.body}</p>
             <div className="button-container">
