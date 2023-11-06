@@ -1,20 +1,6 @@
 import { useState } from "react";
 import './App.css'
-
-function TodoBox(props) {
-  const { todo } = props;
-  return (
-    <div className="todo-box">
-      <h2>{todo.title}</h2>
-      <p>{todo.body}</p>
-      <div className="button-container">
-        <button onClick={() => props.handleDelete(todo.id)}>삭제하기</button>
-        <button onClick={() => props.handleDone(todo.id)}>{(todo.isDone) ? "취소" : "완료"}</button>
-      </div>
-
-    </div>
-  );
-}
+import TodoBox from "./components/TodoBox.jsx"
 
 function App() {
   const initState =
@@ -64,20 +50,20 @@ function App() {
 
   return (
     <div className="layout">
-      <h1>My ToDo List</h1>
+      <h1>My ToDo List🧾</h1>
       <div className="input-container">
         <div>
-          <span> 제목 </span>
+          <span> 제목: </span>
           <input tpye='text' value={title}
             onChange={(e) => setTitle(e.target.value)} />
-          <span> 내용 </span>
+          <span> 내용: </span>
           <input tpye='text' value={contents}
             onChange={(e) => setContents(e.target.value)} />
         </div>
         <button onClick={handleSubmit}>추가하기</button>
       </div>
       <div>
-        <h1>Working..</h1>
+        <h1>Working..🔥</h1>
         <div className="todoBox-container">
           {todoList.filter((item) => !item.isDone)
             .map((item) => {
@@ -85,7 +71,7 @@ function App() {
             })}
         </div>
 
-        <h1>Done..</h1>
+        <h1>Done..🎊</h1>
         <div className="todoBox-container">
           {todoList.filter((item) => item.isDone)
             .map((item) => {
@@ -94,7 +80,6 @@ function App() {
         </div>
       </div>
     </div>);
-
 }
 
 export default App;
