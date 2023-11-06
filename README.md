@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# Todo List
+스파르타 내일배움캠프 리액트 입문 과정 첫번째 개인과제  
+Todo List 만들기
+
+## component 설명
+App.jsx : 메인 UI의 구성  
+TodoBox.jsx : Todo 요소 하나의 UI 구성
+
+---
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
