@@ -36,12 +36,15 @@ function App() {
 
   const handleDone = (id) => {
     const newTodoList = todoList.map((item) => {
+      // if (item.id === id) {
+      //   if (item.isDone) {
+      //     item.isDone = false; // 원본 수정 : 좋지않은 코드!
+      //   } else {
+      //     item.isDone = true;
+      //   }
+      // }
       if (item.id === id) {
-        if (item.isDone) {
-          item.isDone = false;
-        } else {
-          item.isDone = true;
-        }
+        return { ...item, isDone: (item.isDone) ? false : true }; // 객체 복사 후 isDone 만 재정의
       }
       return item;
     });
